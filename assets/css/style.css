@@ -1,0 +1,120 @@
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* 
+@font-face {
+  font-family: Droid Arabic Kufi;
+  src: url(../webfonts/Droid.Arabic.Kufi.ttf);
+} */
+
+/* Start Variables */
+
+:root {}
+
+/* End Variables */
+
+body {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* Header Style */
+
+/* first section Style */
+
+
+
+/* aboutUs page */
+.aboutUs-img
+{
+  margin-top: 4.5rem;
+}
+.aboutUs-img img
+{
+  width: 100%;
+  height: 300px;
+}
+.aboutUs-container
+{
+  border-radius: 1.25rem;
+  background-color: #F5F4F4 !important;
+  margin-top: -75px;
+  position: relative;
+}
+.aboutUs-container .aboutUs-sec
+{
+  padding: 0 2rem;
+  border-bottom: solid 1px #E3E3E3;;
+} 
+.aboutUs-container .aboutUs-title
+{
+  color: #9F796D;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 200%; /* 3.75rem */
+  margin-bottom: 0;
+}
+.aboutUs-container .aboutUs-description
+{
+  color: #717171;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 220%; /* 2.2rem */
+}
+/* contact us */
+.contactUs
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contactUs input,
+.contactUs textarea
+{
+  border-radius: 3.125rem;
+  border: 1px solid #E3E3E3;
+  text-align: right;
+  padding: 20px 51px;
+}
+.contactUs textarea
+{
+  border-radius: 1.25rem;
+
+}
+.contactUs .contactUs-img
+{
+  overflow: hidden;
+}
+.contactUs .contactUs-img img
+{
+  width: 200%;
+  height: 650px;
+}
+.contactUs .contactUs-form img
+{
+  position: absolute;
+  right: 25px;
+  top: 20px;
+}
+.contactUs .contactUs-form button
+{
+  border-radius: 2.5rem;
+  background-color: #3B554F;
+  color: #fff;
+}
+/* footer section */
