@@ -36,7 +36,20 @@ a {
 /* Header Style */
 
 /* first section Style */
-
+.home-s1 video
+{
+  position: absolute;
+  top: -310px;
+  left: 0;
+}
+.home-s1 p 
+{
+  position: fixed;
+  right: 50px;
+  top: 48%;
+  color: #1781AA;
+  font:normal normal 2.5rem/normal 'Segoe UI';
+}
 
 
 /* aboutUs page */
