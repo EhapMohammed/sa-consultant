@@ -241,7 +241,8 @@ footer .p-counter {
 }
 
 /* start courses page style */
-.courses-pg {
+.courses-pg,
+.ourCompany-pg {
   position: relative;
   height: 100vh;
 }
@@ -483,4 +484,146 @@ footer .p-counter {
   display: flex;
   justify-content: space-evenly;
   background-color: #fff;
+}
+
+/* start our compnay page style */
+.ourCompany-pg
+{
+  background-image: url(../img/man-woman-dubai.jpg);
+  background-size: 120%;
+  background-position: center right;
+}
+.ourCompany-pg .p-container {
+  top: 30%;
+}
+.ourCompany-pg .p-container .layer-bg,
+.ourServices-pg .p-container .layer-bg
+{
+  background-color: #198fbe;
+  mix-blend-mode: multiply;
+  z-index: -1;
+}
+.ourCompany-pg .p-container h1 {
+  font-size: 4rem;
+  letter-spacing: .4rem
+}
+.ourCompany-pg .p-container .content-con
+{
+  padding: 3rem 2rem;
+}
+.ourCompany-pg .content-con p
+{
+  text-align: justify;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.ourCompany-pg .content-con p span
+{
+  font-size: 2.5rem;
+}
+@media (max-width:768px) {
+  .ourCompany-pg
+  {
+    background-size: 235% 120%;
+    background-position: 85% 50%;
+    background-repeat: no-repeat;
+  }
+  .ourCompany-pg .p-container h1 {
+    font-size: 2rem;
+    letter-spacing: .4rem
+  }
+  .ourCompany-pg .content-con p
+{
+  font-size: 1rem;
+}
+.ourCompany-pg .content-con p span
+{
+  font-size: 1.5rem;
+}
+  
+}
+
+/* start our services page style */
+.ourServices-pg
+{
+  background-image: url(../img/city-architectural-d.png);
+  background-size: 112%;
+  background-position: 100% 100%;
+  height: 100vh;
+}
+.ourServices-pg .p-container {
+  top: 10%;
+}
+.ourServices-pg .p-container h1 {
+  font-size: 4rem;
+  letter-spacing: .5rem
+}
+.ourServices-pg .p-container .content-con
+{
+  padding: 2rem;
+}
+.ourServices-pg .content-con p
+{
+  text-align: justify;
+  line-height: 2.5rem;
+}
+.ourServices-pg .partner-container
+{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+.ourServices-pg .partner
+{
+  padding: 10px 15px;
+  background-color: #ffffff8c;
+  width: 200px;
+  text-align: center;
+  border-radius: 8px;
+}
+.ourServices-pg .partner img
+{
+  height: 50px;
+}
+@media (max-width:768px) {
+  .ourServices-pg
+  {
+    background-size: 100% 100%;
+  }
+  .ourServices-pg .p-container {
+    top: 20%;
+  }
+  .ourServices-pg .p-container h1 {
+    font-size: 2rem;
+    letter-spacing: .4rem
+  }
+  .ourServices-pg .p-container .content-con
+  {
+    padding: .5rem;
+  }
+  .ourServices-pg .content-con p
+  {
+    letter-spacing: .02rem;
+  }
+  .ourServices-pg .partner
+  {
+    width: unset;
+  }
+  .ourServices-pg .partner img
+  {
+    height: 25px;
+  }
+}
+
+/* start conatctUs-pg style */
+.conatctUs-pg .img-sec
+{
+  height: 35vh;
+  background-image: url(../img/contact-us.jpg);
+  background-size: 100% 100%;
+}
+.conatctUs-pg .img-sec .layer-bg
+{
+  background-color: #198fbe;
+  mix-blend-mode: multiply;
 }
