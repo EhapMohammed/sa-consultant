@@ -627,3 +627,13 @@ footer .p-counter {
   background-color: #198fbe;
   mix-blend-mode: multiply;
 }
+.conatctUs-pg .contactDetials .icon-cont
+{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-right: 10px;
+}
