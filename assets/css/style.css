@@ -9,11 +9,11 @@ html {
   scroll-behavior: smooth;
 }
 
-/* 
+
 @font-face {
-  font-family: Droid Arabic Kufi;
-  src: url(../webfonts/Droid.Arabic.Kufi.ttf);
-} */
+  font-family: 'VariableFont_HEXP';
+  src: url(../webfonts/ReadexPro-VariableFont_HEXP\,wght.ttf);
+}
 
 /* Start Variables */
 
@@ -33,6 +33,12 @@ html {
   color: #fff;
 }
 
+.muted-btn
+{
+  background-color: #198ebd9c;
+  filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.16 ));
+  color: #ffff;
+}
 .primary-outline-btn {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
@@ -49,6 +55,7 @@ html {
 body {
   padding: 0px !important;
   margin: 0px !important;
+  font-family: 'VariableFont_HEXP';
 }
 
 p {
@@ -636,4 +643,24 @@ footer .p-counter {
   align-items: center;
   color: #fff;
   margin-right: 10px;
+}
+
+/* plans style */
+
+.plans-pg .plans-s1 .plans-container
+{
+  display: flex;
+  align-content: stretch;
+  justify-content: space-between;
+}
+.plans-pg .plans-s1 .plan-card
+{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 265px;
+  border-radius: 0.375rem;
+  padding: 1.5rem 0;
+  background: skyblue;
 }
