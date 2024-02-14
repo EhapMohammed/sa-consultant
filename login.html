@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <!--  Bootstrap v5.3.0 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="login-pg">
+
+      <!-- page Content start here -->
+    
+      <!-- first section -->
+      <div class="s1-p-container position-relative h-100  d-flex align-items-end">
+        <div class="bg-layer"></div>
+        <img class="login-logo w-25" src="./assets/img/login-logo.png" alt="">
+        <p class="p-5 mb-5">
+          Learn what you want,<br>
+          <strong>when you want,</strong><br>
+          from you want.
+        </p>
+      </div>
+      <div class="login-form position-relative py-5 h-100 d-flex align-items-center justify-content-evenly flex-column">
+        <div class="bg-layer"></div>
+        <p class="fs-3 text-light ">Welcome</p>
+        <form action="">
+          <div class="mb-3">
+            <div class=" position-relative">
+              <input type="email" placeholder="Email / Username" class="form-control form-control-lg ps-5 bg-transparent text-light border-0 border-bottom rounded-0" id="inputEmail4">
+              <svg class="position-absolute top-0" xmlns="http://www.w3.org/2000/svg" width="30" height="49" viewBox="2006.12 12213 49.153 49.155"><path d="M2048.077 12244.775a24.515 24.515 0 0 0-9.34-5.858c3.723-2.564 6.17-6.854 6.17-11.707 0-7.836-6.375-14.21-14.21-14.21-7.835 0-14.21 6.374-14.21 14.21 0 4.853 2.448 9.143 6.17 11.707a24.519 24.519 0 0 0-9.34 5.858c-4.64 4.645-7.196 10.815-7.196 17.38h3.84c0-11.434 9.3-20.736 20.737-20.736 11.434 0 20.738 9.302 20.738 20.736h3.838c0-6.565-2.556-12.735-7.197-17.38m-17.38-7.199c-5.718 0-10.37-4.649-10.37-10.366 0-5.718 4.652-10.37 10.37-10.37 5.718 0 10.37 4.652 10.37 10.37 0 5.717-4.652 10.366-10.37 10.366" fill="#fff" fill-rule="evenodd" data-name="Path 790"/></svg>
+            </div>
+            <!-- add error message here toggling invalid-feedback  -->
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="mb-3">
+            <div class=" position-relative">
+              <input type="password" placeholder="Passowrd" class="form-control form-control-lg ps-5 bg-transparent text-light border-0 border-bottom rounded-0" id="mobile">
+              <svg class="position-absolute top-0" xmlns="http://www.w3.org/2000/svg" width="28" height="49" viewBox="2009.884 12340.5 40.629 54.29"><g data-name="Union 2"><path d="M2019.177 12395.29c-4.846 0-8.793-3.948-8.793-8.794v-18.904a2.938 2.938 0 0 1 2.934-2.935h30.924v-7.073c0-7.477-6.083-13.55-13.55-13.55-7.478 0-13.55 6.085-13.55 13.55 0 .846-.675 1.519-1.519 1.519a1.51 1.51 0 0 1-1.517-1.519c0-9.153 7.445-16.584 16.587-16.584 9.151 0 16.587 7.442 16.587 16.584v7.073h.796a2.939 2.939 0 0 1 2.936 2.935v18.904c0 4.846-3.947 8.794-8.794 8.794h-23.041Zm-5.746-8.794a5.76 5.76 0 0 0 5.758 5.756h23.03a5.761 5.761 0 0 0 5.757-5.756v-18.802h-34.545v18.802Zm11.593-6.296a5.685 5.685 0 0 1 5.678-5.68 5.685 5.685 0 0 1 5.679 5.68 5.684 5.684 0 0 1-5.68 5.679 5.686 5.686 0 0 1-5.677-5.68Zm3.036 0c0 1.45 1.181 2.641 2.642 2.641a2.657 2.657 0 0 0 2.644-2.653 2.646 2.646 0 0 0-2.644-2.643c-1.46 0-2.642 1.203-2.642 2.655Z" fill="#fff" fill-rule="evenodd"/><path d="M2019.177 12395.29c-4.846 0-8.793-3.948-8.793-8.794v-18.904a2.938 2.938 0 0 1 2.934-2.935h30.924v-7.073c0-7.477-6.083-13.55-13.55-13.55-7.478 0-13.55 6.085-13.55 13.55 0 .846-.675 1.519-1.519 1.519a1.51 1.51 0 0 1-1.517-1.519c0-9.153 7.445-16.584 16.587-16.584 9.151 0 16.587 7.442 16.587 16.584v7.073h.796a2.939 2.939 0 0 1 2.936 2.935v18.904c0 4.846-3.947 8.794-8.794 8.794h-23.041Zm-5.746-8.794a5.76 5.76 0 0 0 5.758 5.756h23.03a5.761 5.761 0 0 0 5.757-5.756v-18.802h-34.545v18.802Zm11.593-6.296a5.685 5.685 0 0 1 5.678-5.68 5.685 5.685 0 0 1 5.679 5.68 5.684 5.684 0 0 1-5.68 5.679 5.686 5.686 0 0 1-5.677-5.68Zm3.036 0c0 1.45 1.181 2.641 2.642 2.641a2.657 2.657 0 0 0 2.644-2.653 2.646 2.646 0 0 0-2.644-2.643c-1.46 0-2.642 1.203-2.642 2.655Z" stroke-linejoin="round" stroke-linecap="round" stroke="rgba(0,0,0,0 )" fill="transparent"/></g></svg>
+            </div>
+            <!-- add error message here toggling invalid-feedback  -->
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="d-flex justify-content-between mt-5 pt-5">
+            <a href="home.html" class="btn primary-btn rounded-0">Login</a>
+            <a href="signup.html" class="btn primary-btn rounded-0">Sign Up</a>
+           </div>
+        </form>
+         
+      </div>
+      <!-- end of first section -->
+
+
+      <!-- End of page Content start here -->
+
+    <!-- Footer Section -->
+    
+    <!-- end Footer Section -->
+
+    <!-- js script files  -->
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

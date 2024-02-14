@@ -104,7 +104,7 @@ a {
   right: 50px;
   bottom: 34%;
   color: var(--primary-color);
-  font: normal normal 2.5rem/normal 'Segoe UI';
+  font-size: 2.5rem;
 }
 
 /* 2 section Style */
@@ -451,6 +451,10 @@ footer .p-counter {
 
 /* start trainers page stayle  */
 /* cards style */
+.trainers-cards-pg .cards-s1
+{
+  height: calc(100vh - 102px);
+}
 .trainers-cards-pg .cards-s1 .imgCard {
   width: 100px;
   height: 100px;
@@ -663,4 +667,78 @@ footer .p-counter {
   border-radius: 0.375rem;
   padding: 1.5rem 0;
   background: skyblue;
+}
+
+/* login/logout */
+.login-pg,
+.signin-pg
+{
+  display: grid;
+  grid-template-columns: 1fr 500px;
+  height: 100vh;
+  background-image: url('../img/city-architectural-d.png');
+  background-size: cover;
+  background-position: center bottom;
+}
+.login-pg .s1-p-container,
+.signin-pg .s1-p-container
+{
+  color: var(--primary-color);
+  font-size: 2.5rem;
+}
+.login-pg .s1-p-container .bg-layer,
+.signin-pg .s1-p-container .bg-layer,
+.login-pg .login-form .bg-layer,
+.signin-pg .signin-form .bg-layer
+{
+  position: absolute;
+  height: 100%;
+  width:100%;
+  z-index: -1;
+}
+.login-pg .s1-p-container .bg-layer,
+.signin-pg .s1-p-container .bg-layer
+{
+  background-color: #ffffffad;
+}
+.login-pg .login-form .bg-layer,
+.signin-pg .signin-form .bg-layer
+{
+  background-color: #1195c9c9;
+}
+.login-pg .login-logo,
+.signin-pg .login-logo
+{
+  position: absolute;
+  top: -85px;
+  left: -80px;
+}
+.login-pg .login-form input::placeholder
+{
+  color: #ffff;
+}
+/* signin */
+.signin-pg .signin-form .name-inputs
+{
+  display: flex;
+  gap: 0.5rem;
+}
+.signin-pg .signin-form input:not([type="radio"]) {
+  width: 70%;
+}
+.signin-pg .signin-form form label
+{
+  color: #ffff;
+  font-weight: 200;
+  letter-spacing: .08rem;
+  line-height: 1.7;
+}
+.signin-pg .signin-form input:not([type="radio"])
+{
+  border-radius: unset;
+}
+.signin-pg .signin-form input::placeholder
+{
+  color: #198fbe;
+  text-align: center;
 }
