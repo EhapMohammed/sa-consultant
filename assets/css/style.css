@@ -123,7 +123,7 @@ a {
   background-image: linear-gradient(to right, #0000, #0000, #fff);
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
 }
 
 .home-s1 p {
@@ -242,13 +242,31 @@ footer .p-counter {
 }
 
 /* media Quere */
-@media (max-width:768px) {
+@media (max-width:1025px){
+  .home-pg
+  {
+    overflow: hidden;
+  }
+  .home-s1 video
+  {
+    margin-top: -50px;
+  }
+  .home-s1 .s1-p-container
+  {
+    background-image:  linear-gradient(to right, #0000, #fff);;
+  }
+}
+@media (max-width:767px) {
 
   .home-s1 video,
   .home-s2 {
     margin-top: 0;
   }
 
+  .home-s1 .s1-p-container
+  {
+    height: 75%;
+  }
   .home-s1 p {
     right: 3px;
     bottom: 20%;
@@ -259,9 +277,18 @@ footer .p-counter {
     z-index: unset;
     height: unset;
   }
+
   .home-s2 .up-title p
   {
     font-size:15px
+  }
+  .home-s2 .filter
+  {
+    padding: .5rem;
+  }
+  .home-s2 .filter .filter-item
+  {
+    font-size: 14px;
   }
   footer {
     gap: .2rem;
@@ -485,12 +512,14 @@ footer .p-counter {
 }
 .courses-cards-pg .details-s1,
 .details-pg .details-s1 {
-  background-color: #6fc7e842;
+  display: flex;
+  align-items: center;
 }
 
 .courses-cards-pg .details-s1 .card,
 .details-pg .details-s1 .card {
-  background-color: transparent;
+  background-color: #6fc7e842;
+  width: 100%;
 }
 
 .courses-cards-pg .details-s1 .rate-add {
@@ -547,6 +576,12 @@ footer .p-counter {
 }
 
 /* start Trainers Details page style */
+.details-pg
+{
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
 .details-s1 .cardImg {
   width: 200px;
   height: 200px;
@@ -700,9 +735,8 @@ footer .p-counter {
 /* start conatctUs-pg style */
 .conatctUs-pg .img-sec
 {
-  height: 35vh;
   background-image: url(../img/contact-us.jpg);
-  background-size: 100% 100%;
+  background-size: cover;
 }
 .conatctUs-pg .img-sec .layer-bg
 {
