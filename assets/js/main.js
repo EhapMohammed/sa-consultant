@@ -1,3 +1,9 @@
+wow = new WOW(
+    {
+        animateClass: 'animate__animated' //updated default animate 4.+
+    }
+)
+wow.init();
 document.addEventListener("DOMContentLoaded", function() {
     const ratingContainer = document.getElementById("rating");
     const stars = ratingContainer.querySelectorAll(".star");
