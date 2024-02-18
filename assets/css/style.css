@@ -255,15 +255,21 @@ footer .p-counter {
   }
 }
 @media (max-width:767px) {
-
+  .home-pg
+  {
+    height: calc(100vh - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .conatctUs-pg
+  {
+    height: calc(100vh - 40px);
+    display: block;
+  }
   .home-s1 video,
   .home-s2 {
     margin-top: 0;
-  }
-
-  .home-s1 .s1-p-container
-  {
-    height: 75%;
   }
   .home-s1 p {
     right: 3px;
@@ -283,6 +289,7 @@ footer .p-counter {
   .home-s2 .filter
   {
     padding: .5rem;
+    justify-content: flex-start;
   }
   .home-s2 .filter .filter-item
   {
@@ -384,6 +391,10 @@ footer .p-counter {
   }
 }
 @media (max-width:991px) {
+  .courses-pg
+  {
+    height: calc(100vh - 40px);
+  }
   .courses-pg .navbar 
   {
     background-color: var(--primary-color);
@@ -410,6 +421,7 @@ footer .p-counter {
   .courses-pg .home-s1 video {
     right: 100%;
     top: 0;
+    height: 100vh;
   }
 
   .courses-pg .home-s2 {
@@ -796,7 +808,13 @@ footer .p-counter {
   color: #fff;
   margin-right: 10px;
 }
-
+@media (max-width: 767px) {
+  .conatctUs-pg .img-sec
+  {
+    background-size: 100% 100%;
+    height: 20vh;
+  }
+}
 /* plans style */
 
 .plans-pg
