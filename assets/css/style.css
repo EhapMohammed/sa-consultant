@@ -257,14 +257,14 @@ footer .p-counter {
 @media (max-width:767px) {
   .home-pg
   {
-    height: calc(100vh - 45px);
+    height: calc(100vh - 50px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
   .conatctUs-pg
   {
-    height: calc(100vh - 45px);
+    height: calc(100vh - 50px);
     display: block;
   }
   .home-s1 video,
@@ -393,7 +393,7 @@ footer .p-counter {
 @media (max-width:991px) {
   .courses-pg
   {
-    height: calc(100vh - 45px);
+    height: calc(100vh - 50px);
   }
   .courses-pg .navbar 
   {
