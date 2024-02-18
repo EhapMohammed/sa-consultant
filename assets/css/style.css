@@ -99,13 +99,6 @@ a {
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
-@media (max-width: 768px) {
-  .navbar .navbar-collapse .social {
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
-  }
-}
 /* first section Style */
 .home-pg,.conatctUs-pg
 {
@@ -255,6 +248,11 @@ footer .p-counter {
   {
     background-image:  linear-gradient(to right, #0000, #fff);;
   }
+  .navbar .navbar-collapse .social {
+    justify-content: center;
+    gap: 1.5rem;
+    padding: .5rem 0 1rem;
+  }
 }
 @media (max-width:767px) {
 
@@ -379,7 +377,19 @@ footer .p-counter {
 }
 
 /* courses page media Querey */
-@media (max-width:768px) {
+@media (max-width:1023px) {
+  .courses-pg .home-s1 video
+  {
+    right: 60%;
+  }
+}
+@media (max-width:991px) {
+  .courses-pg .navbar 
+  {
+    background-color: var(--primary-color);
+  }
+}
+@media (max-width:767px) {
 
   /* start courses page style */
   /* .courses-pg {
@@ -392,11 +402,14 @@ footer .p-counter {
     height: unset;
   }
 
+  .courses-pg .home-s1 .s1-p-container
+  {
+    height: 100%;
+  }
+
   .courses-pg .home-s1 video {
-    margin-top: unset;
     right: 100%;
-    bottom: 35%;
-    height: 100vh;
+    top: 0;
   }
 
   .courses-pg .home-s2 {
@@ -423,16 +436,21 @@ footer .p-counter {
 /* start courses cards page style  */
 /* cards style */
 .card-title {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .card-text {
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .card-title,
 .card-text {
   color: var(--primary-color);
+}
+.courses-cards-pg .card .btn,
+.trainers-cards-pg .card .btn
+{
+  font-size: .8rem;
 }
 
 .courses-cards-pg footer,
@@ -546,12 +564,20 @@ footer .p-counter {
 }
 .trainers-cards-pg .cards-s1
 {
-  height: calc(100vh - 120px);
+  height: calc(100vh - 150px);
   overflow-y: auto;
 }
 .trainers-cards-pg .card-container
 {
-  width: 250px;
+  width: 240px;
+}
+.trainers-cards-pg .cards-s1 .img-container
+{
+  width: 110px;
+  height: 110px;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  margin: auto;
 }
 .trainers-cards-pg .cards-s1 .imgCard {
   width: 100px;
@@ -564,16 +590,29 @@ footer .p-counter {
   border-color: var(--primary-color);
   background-color: #6fc7e842;
 }
-
+.trainers-cards-pg .cards-s1 .card:hover
+{
+  background-color: var(--primary-color);
+}
+.trainers-cards-pg .cards-s1 .card:hover .card-title,
+.trainers-cards-pg .cards-s1 .card:hover .card-text,
+.trainers-cards-pg .cards-s1 .card:hover .btn
+{
+  color: #fff !important;
+}
+.trainers-cards-pg .cards-s1 .card:hover .btn
+{
+  background-color: #6fc7e842 ;
+}
 /* media querey trainers-cards-pg */
-@media (max-width:768px) {
+/* @media (max-width:768px) {
 
   .trainers-cards-pg .cards-s1 .imgCard {
     width: 75px;
     height: 75px;
     margin: auto;
   }
-}
+} */
 
 /* start Trainers Details page style */
 .details-pg
@@ -651,6 +690,10 @@ footer .p-counter {
   .ourCompany-pg .content-con p
 {
   font-size: 1rem;
+}
+.ourCompany-pg .p-container .content-con
+{
+  padding: 1rem .6rem;
 }
 .ourCompany-pg .content-con p span
 {
