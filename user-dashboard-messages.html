@@ -105,7 +105,7 @@
       <!-- page Content start here -->
     
       <!-- first section -->
-      <section class="panal-container container py-5">
+      <section class="panal-container contain-chat container py-5">
         <script>
           const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
           const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
@@ -133,7 +133,7 @@
               <svg xmlns="http://www.w3.org/2000/svg"  viewBox="177.525 388.067 34.466 22.432"><g data-name="payments"><path d="M177.525 410.5h34.466v-22.433h-34.466v22.432Zm2.5-2.5v-10.25h29.466V408h-29.466Zm29.466-17.433v3.734h-29.466v-3.734h29.466Z"  fill-rule="evenodd" data-name="Path 30"/><path d="M197.69 401.79h8.74v2.5h-8.74v-2.5z"  fill-rule="evenodd" data-name="Rectangle 28"/></g></svg>
               Payments
             </a></li>
-            <li><a href="">
+            <li><a href="/user-dashboard-settings.html">
               <svg xmlns="http://www.w3.org/2000/svg"  viewBox="183.501 434 24.514 31.899"><g data-name="trading view">
                 <path d="M185.522 444.446V434h2.5v10.446h-2.5z"  fill-rule="evenodd" data-name="Rectangle 21"/><path d="M185.522 465.9v-11.12h2.5v11.12h-2.5z"  fill-rule="evenodd" data-name="Rectangle 22"/>
                 <path d="M183.5 445.488v8.475h6.545v-8.475H183.5Zm4.045 2.5v3.475H186v-3.475h1.544Z"  fill-rule="evenodd" data-name="Path 27"/><path d="M194.508 437.707V434h2.5v3.707h-2.5z"  fill-rule="evenodd" data-name="Rectangle 23"/><path d="M194.508 465.9V448.04h2.5V465.9h-2.5z"  fill-rule="evenodd" data-name="Rectangle 24"/><path d="M192.486 438.749v8.475h6.544v-8.475h-6.544Zm4.044 2.5v3.475h-1.544v-3.475h1.544Z"  fill-rule="evenodd" data-name="Path 28"/><path d="M203.494 448.94V434h2.5v14.94h-2.5z"  fill-rule="evenodd" data-name="Rectangle 25"/><path d="M203.494 465.9v-6.627h2.5v6.627h-2.5z"  fill-rule="evenodd" data-name="Rectangle 26"/><path d="M208.015 449.981h-6.543v8.475h6.543v-8.475Zm-4.043 5.975v-3.475h1.543v3.475h-1.543Z"  fill-rule="evenodd" data-name="Path 29"/></g>
@@ -150,35 +150,137 @@
              <p>Logout</p>
           </a>
         </div>
-        <div class="centerl-container">
+        <div class="centerl-container chat-container">
           
-        </div>
-        <div class="most-watshed p-3">
-          <div class="top-sec d-flex align-items-center justify-content-between">
-            <p class="fw-semibold">Most Watched</p>
-            <a href="#" data-bs-toggle="tooltip"
-            data-bs-title="All Your Videos Sorted By Most Watched.">
-            <i class="fas fa-info-circle text-muted"></i>
-            </a>
-          </div>
-          <hr class="text-secondary-emphasis mt-2">
-          <ul type="none">
-            <li><a href="">
-              My Couses <span>21.1K</span>
-            </a></li>
-            <li><a href="">
-              My Couses <span>21.1K</span>
-            </a></li>
-            <li><a href="">
-              My Couses <span>21.1K</span>
-            </a></li>
-            <li><a href="">
-              My Couses <span>21.1K</span>
-            </a></li>
-            <li><a href="">
-              My Couses <span>21.1K</span>
-            </a></li>
-          </ul>
+            <div class="chat-side-menu">
+                <div class="side-header ">
+                    <div class="user-img-container">
+                        <img src="assets/img/userChat.png" alt="">
+                        <div class="user-online"></div>
+                    </div>
+                    <div class="head-search ms-2 position-relative w-100">
+                        <input type="search" class="form-control rounded-5" placeholder="Search...">
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <i id="close_users_list" class="fas fa-times fs-5 mx-2 d-block d-md-none"></i>
+                </div>
+                <!-- users list -->
+                <h5 class="m-3 text-primary fw-semibold">Chats</h5>
+                <ul class="users-list">
+                    <li class="user-container active-chat">
+                        <div class="position-relative">
+                            <i class="fas fa-circle online-icon"></i>
+                            <img src="assets/img/userChat.png" alt="">
+                        </div>
+                        <div class="user-name w-100">
+                            <div class="d-flex justify-content-between gap-1">
+                                <p>User Name</p>
+                                <span>5 Minutes</span>
+                            </div>
+                            <p>hi, i send to you...</p>
+                        </div>
+                    </li>
+                    <li class="user-container">
+                        <div class="position-relative">
+                            <i class="fas fa-circle offline-icon"></i>
+                            <img src="assets/img/userChat.png" alt="">
+                        </div>
+                        <div class="user-name w-100">
+                            <div class="d-flex justify-content-between gap-1">
+                                <p>User Name</p>
+                                <span>5 Minutes</span>
+                            </div>
+                            <p>hi, i send to you...</p>
+                        </div>
+                    </li>
+                    <li class="user-container">
+                        <img src="assets/img/userChat.png" alt="">
+                        <div class="user-name w-100">
+                            <div class="d-flex justify-content-between gap-1">
+                                <p>User Name</p>
+                                <span>5 Minutes</span>
+                            </div>
+                            <p>hi, i send to you...</p>
+                        </div>
+                    </li>
+                    <li class="user-container">
+                        <img src="assets/img/userChat.png" alt="">
+                        <div class="user-name w-100">
+                            <div class="d-flex justify-content-between gap-1">
+                                <p>User Name</p>
+                                <span>5 Minutes</span>
+                            </div>
+                            <p>hi, i send to you...</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="chat-body">
+                <div class="body-header">
+                    <div class="user-container">
+                        <i id="user_list_icon" class="fas fa-bars mx-1 fs-5 d-block d-md-none"></i>
+                        <div class="position-relative">
+                            <i class="fas fa-circle online-icon"></i>
+                            <img src="assets/img/userChat.png" alt="">
+                        </div>
+                        <div class="user-name">
+                            <p>User Name</p>
+                            <p>User Title</p>
+                        </div>
+                    </div>
+                    <div class="messages-search">
+                        <i class="fa fa-search"></i>
+                        <div class="dropdown-center d-flex justify-content-center">
+                            <div class=" dropdown-toggle position-relative" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                            <ul class="dropdown-menu position-absolute" style="inset: unset; width: 15rem;">
+                              <li><span class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalEdit" style="color:#212529;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4.16667 15.7414H5.34517L13.1066 7.98L11.9281 6.80148L4.16667 14.5629V15.7414ZM17.5 17.4081H2.5V13.8726L13.6958 2.6767C14.0213 2.35126 14.5489 2.35126 14.8743 2.6767L17.2314 5.03372C17.5568 5.35916 17.5568 5.88679 17.2314 6.21223L7.7022 15.7414H17.5V17.4081ZM13.1066 5.62297L14.2851 6.80148L15.4636 5.62297L14.2851 4.44446L13.1066 5.62297Z" fill="#1D1F2C"/>
+                                     </svg>
+                                     Block User
+                              </span></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+                <div class="messages-container">
+                    <!-- my message -->
+                    <div class="my-message">
+                        <img class="messager-img" src="assets/img/userChat.png" alt="">
+                        <div class="ms-inner-container">
+                            <p class="ms-content">Hi. i`m the admin</p>
+                            <span class="text-muted">10:15 <i class="ms-2 fas fa-check"></i></span>
+                        </div>
+                        
+                    </div>
+                    <!-- clint message -->
+                    <div class="user-message">
+                        <div class="ms-inner-container">
+                        <p class="ms-content">hi. i`m user</p>
+                        <span class="text-muted">10:15</span>
+                        </div>
+                        <img class="messager-img" src="assets/img/userChat.png" alt="">
+                    </div>
+                    <!-- my message -->
+
+                    <div class="my-message">
+                        <img class="messager-img" src="assets/img/userChat.png" alt="">
+                        <div class="ms-inner-container">
+                            <p class="ms-content">Hi. i`m the admin</p>
+                            <span class="text-muted">10:15 <i class="ms-2 fas fa-check-double text-primary"></i></span>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="send-container">
+                    <input class="form-control" type="text" name="" id="" placeholder="Type Your Message Here">
+                    <button class="btn btn-primary">send <i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+          
         </div>
        
       </section>
