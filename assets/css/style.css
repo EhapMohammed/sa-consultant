@@ -99,6 +99,39 @@ a {
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
+.notification .dropdown-menu[data-bs-popper]
+{
+  right: 0;
+  left: unset;
+  width: 270px;
+}
+.notification .dropdown-item
+{
+  text-wrap: wrap;
+  font-size: 14px;
+}
+.notification .new-notifiy
+{
+  border-left: 5px solid #4d89e1;
+  background: #0d6efd14;
+}
+.cart-navIcon span
+{
+  position: absolute;
+    top: -5px;
+    right: 0;
+    padding: 0 2px;
+    font-size: 10px;
+    text-align: center;
+
+}
+@media (max-width: 768px) {
+  .notification .dropdown-menu[data-bs-popper]
+  {
+    right: unset;
+    left: -50px;
+  }
+}
 /* first section Style */
 .home-pg,.conatctUs-pg
 {
@@ -1355,4 +1388,33 @@ footer .p-counter {
   border:1px solid var(--primary-color);
   border-radius: 10px;
   color: var(--primary-color);
+}
+.cart-container
+{
+  display: grid;
+  grid-template-columns: auto 250px;
+}
+.cart-cards-conitanier
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+.payment-details
+{
+  background-color: rgb(248,249,250);
+  height: fit-content;
+}
+@media (max-width : 768px) {
+  .cart-container
+{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.payment-details
+{
+  background-color: rgb(248,249,250);
+  height: fit-content;
+}
 }
