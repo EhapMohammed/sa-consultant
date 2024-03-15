@@ -598,7 +598,26 @@ footer .p-counter {
   right: 50px;
   padding: 0.2rem 0.5rem;
 }
+.userCount
+{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 500px;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    padding: 0.2rem 0.5rem;
+    color: var(--primary-color);
+}
+.userCount span
+{
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.2rem 0.5rem;
 
+}
 /* start trainers page stayle  */
 /* cards style */
 .trainers-cards-pg
